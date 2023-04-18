@@ -22,6 +22,8 @@ function App() {
         >
           Learn React
         </a>
+        <HornedBeast/>
+        <HornedBeast/>
       </header>
       <Footer/>
     </div>

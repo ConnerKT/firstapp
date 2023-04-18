@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import HornedBeast from './HornedBeast';
+import Main from './Main';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a >
+        <Main/>
       </header>
       <Footer/>
     </div>

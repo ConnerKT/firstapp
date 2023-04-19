@@ -1,20 +1,22 @@
 import HornedBeast from './HornedBeast';
+import Data from './data.json';
 
 function Main() {
   return (
+  
     <div>
-        <HornedBeast 
-         imageUrl="hornedbeast1.jpg"
-         title="Unicorn"
-         description="This is a unicorn"
-         
-         />
-        <HornedBeast 
-        imageUrl="hornedbeast.png"
-        title="Troll"
-        description="This is a troll with a horn"
+      {
+        Data.map(value => {
+          return <HornedBeast
+          className="dragons"
+          id={value.id}
+          imageUrl={value.image_url}
+          description={value.description}
+
+          />
         
-        />  
+        })
+      }
     </div>
   
   );

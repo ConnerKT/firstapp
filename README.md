@@ -14,12 +14,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+## Feature #1
+
 Number and name of feature: Display Images
 
 Estimate of time needed to complete: One Hour
 
-Start time: 8:12 PM
+Start time: 12:26 PM
 
-Finish time: _____
+Finish time: 2:15 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: Around 2 hours

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import {ReactComponent as Favorite} from './favorite.svg';
 
 function Main() {
-
   return (
    
     

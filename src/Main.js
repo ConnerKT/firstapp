@@ -5,16 +5,14 @@ import favorite from './favorite.svg';
 
 function Main() {
   let [isFavorited, setIsFavorited] = useState(false)
-  let [defaultColor, setDefaultColor] = useState("White")
+  let [defaultVisibility, setDefaultVisibility] = useState("hidden")
 
   function imageClick(){
    
-    setIsFavorited(!isFavorited);
-    if (!isFavorited) {
-      setDefaultColor("Red");
-    } else {
-      setDefaultColor("White");
+    if(isFavorited === true){
+      setDefaultVisibility("visible")
     }
+    setIsFavorited(true)
   
   }
   return (
@@ -32,9 +30,10 @@ function Main() {
           imageUrl={value.image_url}
           description={value.description}
           width="100"
-          height="100"/>
+          height="100"
+          onClick={imageClick} />
 
-          <img src={favorite} alt="favorite" onClick={imageClick} style={{fill:defaultColor}} />
+          <img src={favorite} alt="favorite" style={{display: defaultVisibility }} />
         </div>
         );
       }))

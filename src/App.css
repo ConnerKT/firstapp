@@ -36,4 +36,7 @@
     transform: rotate(360deg);
   }
 }
-
+.dragons {
+  width:400px;
+  height:400px;
+}

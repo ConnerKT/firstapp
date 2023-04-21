@@ -44,8 +44,8 @@ Number and name of feature: Bootstrap #3
 
 Estimate of time needed to complete: One Hour
 
-Start time: 4:08
+Start time: 4:08 PM
 
-Finish time: _____
+Finish time: 6:00 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 2 hours

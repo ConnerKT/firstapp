@@ -43,8 +43,6 @@
   justify-content: between;
   flex-wrap:wrap;
 }
-.container {
-  display:flex;
-  justify-content: space-between;
-  flex-wrap:wrap;
+img {
+  object-fit: contain;
 }

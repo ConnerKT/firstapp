@@ -10,6 +10,7 @@ function Main() {
         //Using the map method to loop through Data's array of objects
       Data.map(value => {
         return (
+          // Here we are setting a map method on the data array, making an image, description, and id for each loop.
           <div>  
           <HornedBeast
           //For each value 0,1,2 etc, it will provide the targeted property for that item.

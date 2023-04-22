@@ -2,7 +2,7 @@ import HornedBeast from './HornedBeast';
 import Data from './data.json';
 import Container from 'react-bootstrap/Container';
 
-function Main() {
+function Main(props) {
   return (
     <Container style={{display: "flex", 'flex-wrap':"wrap","justify-content":'space-between','object-fit': 'contain'}}>
       {Data.map(value => {
@@ -15,7 +15,7 @@ function Main() {
               imageUrl={value.image_url}
               description={value.description}
               style={{ width: "100", height: "100", }}
-
+              updateFunction={props.updateFunction}
             />
           </div>
         )

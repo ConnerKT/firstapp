@@ -5,16 +5,20 @@ import Footer from './Footer';
 import HornedBeast from './HornedBeast';
 import Main from './Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SelectedBeast from './SelectedBeast'
+import { useState } from 'react';
 
 
 function App() {
- 
+  const [displaySelectedBeast, setDisplaySelectedBeast] = useState(false)
+
   return (
 
     <div className="App">
       <div>
         <Header/>
-        <Main/>
+        {displaySelectedBeast === true ? <SelectedBeast/> : <></>}
+        <Main updateFunction={setDisplaySelectedBeast}/>
         <Footer/>
       </div>
     </div>

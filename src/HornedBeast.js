@@ -34,7 +34,7 @@ function HornedBeast(props) {
         {/* Here I'm creating a card, with my img, title, and text contained with my like button */}
         <Card style={{ width: '18rem' , color:'black'}}>  
             {/* This includes the Name of the beast, its alt,src,and title, and the description*/}
-            <Card.Img variant="top"alt={props.alt} src={props.imageUrl} title={props.title} style={{width:props.style.width, height:props.style.height}} className="dragons"/>
+            <Card.Img onClick={() => {props.updateFunction(true)}} variant="top"alt={props.alt} src={props.imageUrl} title={props.title} style={{width:props.style.width, height:props.style.height}} className="dragons"/>
               <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.description}</Card.Text>

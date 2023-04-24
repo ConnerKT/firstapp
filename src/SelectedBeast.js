@@ -3,18 +3,22 @@ import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
 
-function SelectedBeast() {
+function SelectedBeast(props) {
 
     const [show, setShow] = useState(true);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    return <Modal show={show} onHide={handleClose}>
+    return <Modal show={show} onHide={handleClose} style={{objectFit:"contain", width: "100", height: "100"}}>
         <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>{props.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+            <img src={props.image} alt="sd" width="500" height="300"></img>
+      
+        {props.body}
+        </Modal.Body>
         <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
                 Close

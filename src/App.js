@@ -7,18 +7,25 @@ import Main from './Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SelectedBeast from './SelectedBeast'
 import { useState } from 'react';
+import { Modal } from 'react-bootstrap';
 
-
-function App() {
-  const [displaySelectedBeast, setDisplaySelectedBeast] = useState(false)
+function App(props) {
+  const [displaySelectedBeast, setDisplaySelectedBeast] = useState(false);
+  const [modalImage, setModalImage] = useState(undefined);
+  const [modalBody, setModalBody] = useState("");
+  const [modalTitle, setModalTitle] = useState("");
 
   return (
 
     <div className="App">
       <div>
         <Header/>
-        {displaySelectedBeast === true ? <SelectedBeast/> : <></>}
-        <Main updateFunction={setDisplaySelectedBeast}/>
+        {/* {displaySelectedBeast === true ? <SelectedBeast/> */}
+        
+        {displaySelectedBeast === true? <SelectedBeast title={modalTitle} body={modalBody} image={modalImage}/>: <></>}
+
+         {/* : <></>} */}
+        <Main updateFunction={setDisplaySelectedBeast} updateImageFunction ={setModalImage} updateBodyFunction ={setModalBody} updateTitleFunction ={setModalTitle}/>
         <Footer/>
       </div>
     </div>

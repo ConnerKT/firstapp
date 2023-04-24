@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 function Main(props) {
   return (
+    // Setting a container for the horned beast so we can style it
     <Container style={{display: "flex", 'flex-wrap':"wrap","justify-content":'space-between','object-fit': 'contain'}}>
       {Data.map(value => {
 
@@ -12,6 +13,7 @@ function Main(props) {
           <div className='div'>
             <HornedBeast
               //For each value 0,1,2 etc, it will provide the targeted property for that item.
+              // With the map function we are looping through an array to give data for each attribute
               id={value.id}
               imageUrl={value.image_url}
               title = {value.title}

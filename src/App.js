@@ -25,6 +25,7 @@ function App(props) {
     <div className="App">
       <div>
         <Header/>
+
         {/* {displaySelectedBeast === true ? <SelectedBeast/> */}
         {/* This sets up a tenary operator for the select beast display, and sets the variable to the component so we can change it */}
         {displaySelectedBeast === true? <SelectedBeast title={modalTitle} body={modalBody} image={modalImage}/>: <></>}

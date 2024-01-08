@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
 function Header() {
   return (
-    <h1>
-        My Header
-    </h1>
-  );
+    <div>
+      <h1 style={{ textAlign: 'center' }}>My PokeDex</h1>
+    </div>
+  )
 }
 
-export default Header;
+export default Header
